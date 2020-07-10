@@ -22,6 +22,9 @@ interface Config {
         dateBackground?: string;
     }
 }
+let digitalClockInterval: any;
+let dateInterval: any;
+let styleCSSElement: any;
 const configDefaults: Config = {
     htmlElement: '',
     showDate : false,
@@ -101,15 +104,16 @@ export class AnalogClock {
     constructor(public config: Config) {
         config.styleOptions = {...configDefaults.styleOptions, ...config.styleOptions };
         this.config = { ...configDefaults, ...config };
-        document.addEventListener("DOMContentLoaded", () => {
-            const template = `<div id="clock"><div class="clock-axis"></div><div class="clock-second"></div><div class="clock-minute"></div><div class="clock-hour"></div><div class="clock-axis-indicators"></div></div>`
-            const clockElement: any = document.getElementById(config.htmlElement);
+        const template = `<div id="clock"><div class="clock-axis"></div><div class="clock-second"></div><div class="clock-minute"></div><div class="clock-hour"></div><div class="clock-axis-indicators"></div></div>`
+        const clockElement: any = document.getElementById(config.htmlElement);
+        if(clockElement) {
+            clockElement.innerHTML = '';
             clockElement.insertAdjacentHTML('afterbegin', template);
             this.initializeClock();
             this.appendStyleSheet();
             this.setClockIcons();
             this.setDateAndDigitalTime();
-        });
+        }
     }
 
     initializeClock = () => {
@@ -152,9 +156,11 @@ export class AnalogClock {
 
     setDateAndDigitalTime = () => {
         const clockDivElement: any = document.getElementById('clock');
+        clearInterval(digitalClockInterval);
+        clearInterval(dateInterval)
         if(this.config.showDigitalClock) {
             clockDivElement.insertAdjacentHTML('beforeend', '<div class="clock-digital"></div>');
-            setInterval(() => {
+            digitalClockInterval = setInterval(() => {
                 const date = new Date().toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true })
                 const digitalClockElement: any = document.getElementsByClassName('clock-digital')[0];
                 digitalClockElement.innerHTML = date;
@@ -162,7 +168,7 @@ export class AnalogClock {
         }
         if(this.config.showDate) {
             clockDivElement.insertAdjacentHTML('beforeend', '<div class="clock-date"></div>');
-            setInterval(() => {
+            dateInterval = setInterval(() => {
                 const digitalDateElement: any = document.getElementsByClassName('clock-date')[0];
                 digitalDateElement.innerHTML = new Date().getDate().toString();
             }, 1000)
@@ -171,6 +177,9 @@ export class AnalogClock {
 
     appendStyleSheet = () => {
         const clockStyleSheet = this.getStyles();
+        if (styleCSSElement) {
+            styleCSSElement.remove();
+        }
         var styleElement: any = document.createElement("style");
         if (document.getElementsByTagName("head")[0].appendChild(styleElement), styleElement.styleSheet) {
             styleElement.styleSheet.disabled || (styleElement.styleSheet.cssText = clockStyleSheet)
@@ -179,6 +188,7 @@ export class AnalogClock {
         } catch (e) {
             styleElement.innerText = clockStyleSheet;
         }
+        styleCSSElement = styleElement;
     }
 
     getStyles = () => {

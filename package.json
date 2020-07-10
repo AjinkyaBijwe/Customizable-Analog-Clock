@@ -1,0 +1,36 @@
+{
+  "name": "customizable-analog-clock",
+  "version": "0.0.1",
+  "description": "Total CSS and JS Analog Clock with Maximum Customization. Including Emojis for Clock Indicators",
+  "main": "lib/analog-clock.js",
+  "types": "lib/analog-clock.d.ts",
+  "homepage": "https://github.com/AjinkyaBijwe/analog-clock",
+  "bugs": {
+    "url": "https://github.com/AjinkyaBijwe/analog-clock/issues"
+  },
+  "devDependencies": {
+    "jsmin": "^1.0.1",
+    "typescript": "^3.9.6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "minify": "jsmin -o lib/analog-clock.min.js lib/analog-clock.js",
+    "build": "tsc",
+    "build-prod": "tsc && npm run minify",
+    "watch": "tsc --watch",
+    "publish": "npm run build-prod && npm publish"
+  },
+  "keywords": [],
+  "author": "Ajinkya Bijwe",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AjinkyaBijwe/analog-clock.git"
+  },
+  "dependencies": {
+    "user": "0.0.0"
+  },
+  "directories": {
+    "lib": "lib"
+  }
+}

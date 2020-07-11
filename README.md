@@ -35,7 +35,7 @@ const config = {
         clockIndicatorIconColor: '#03a9f4',
         clockIndicatorMainColor: '#03a9f4',
         dateColor: '#c9c9c9',
-        dateBackground: '#13222a',
+        dateBackgroundColor: '#13222a',
     }
 }
 ```

@@ -19,7 +19,7 @@ interface Config {
         clockIndicatorIconColor?: string;
         clockIndicatorMainColor?: string;
         dateColor?: string;
-        dateBackground?: string;
+        dateBackgroundColor?: string;
     };
 }
 export declare class AnalogClock {

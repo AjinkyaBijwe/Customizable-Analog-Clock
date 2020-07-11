@@ -19,7 +19,7 @@ interface Config {
         clockIndicatorIconColor?: string;
         clockIndicatorMainColor?: string;
         dateColor?: string;
-        dateBackground?: string;
+        dateBackgroundColor?: string;
     }
 }
 let digitalClockInterval: any;
@@ -46,7 +46,7 @@ const configDefaults: Config = {
         clockIndicatorIconColor: '#03a9f4',
         clockIndicatorMainColor: '#03a9f4',
         dateColor: '#c9c9c9',
-        dateBackground: '#13222a',
+        dateBackgroundColor: '#13222a',
     }
 }
 export class AnalogClock {
@@ -201,7 +201,7 @@ export class AnalogClock {
             --watch-background-image: url(${styles?.clockBackgroundImage});
             --watch-border: ${styles?.clockBorderColor};
             --watch-date-color: ${styles?.dateColor};
-            --watch-date-background: ${styles?.dateBackground};
+            --watch-date-background: ${styles?.dateBackgroundColor};
             --watch-center-border: ${styles?.clockCenterBorderColor};
             --watch-center-background: ${styles?.clockCenterBackgroundColor};
             --watch-second-hand-color: ${styles?.clockSecondHandColor};

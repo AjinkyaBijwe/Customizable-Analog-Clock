@@ -20,6 +20,8 @@ interface Config {
         clockIndicatorMainColor?: string;
         dateColor?: string;
         dateBackgroundColor?: string;
+        digitalClockColor?: string;
+        digitalClockBackgroundColor?: string;
     };
 }
 export declare class AnalogClock {
@@ -72,6 +74,10 @@ export declare class AnalogClock {
     *   dateColor?: string, Optional
     *
     *   dateBackground?: string, Optional
+    *
+    *   digitalClockColor?: string, Optional
+    *
+    *   digitalClockBackgroundColor?: string, Optional
     *
     * }
     */

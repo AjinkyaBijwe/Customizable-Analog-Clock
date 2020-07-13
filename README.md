@@ -1,16 +1,16 @@
 
-# [Customizable Analog Clock](https://github.com/AjinkyaBijwe/customizable-analog-clock "Analog Clock")
+# [Customizable Analog Clock](https://ajinkyabijwe.github.io/Customizable-Analog-Clock-Demo/ "Analog Clock")
 
 Total CSS and JS Analog Clock with Maximum Customization with Neomorphic Designed Watchface. Including Emojis for Clock Indicators.
 
-> Demo Page and NPM Module Coming Soon
+> NPM Module Coming Soon
 
 ![emoji](https://user-images.githubusercontent.com/8812357/87088012-110cdc00-c202-11ea-874b-29e06a74ccb5.png)
 ![numbers](https://user-images.githubusercontent.com/8812357/87088015-110cdc00-c202-11ea-9ea8-35a7ba5577b4.png)
 ![date](https://user-images.githubusercontent.com/8812357/87088011-10744580-c202-11ea-88e1-63af0df4dea5.png)
 
-## Base URL
-https://github.com/AjinkyaBijwe/customizable-analog-clock
+## Demo
+[Demo](https://ajinkyabijwe.github.io/Customizable-Analog-Clock-Demo/)
 
 ## Default Configuration Options
 ```javascript

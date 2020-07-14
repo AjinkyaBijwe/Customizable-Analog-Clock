@@ -46,8 +46,8 @@ const config = {
 ## Example Usage
 Analog Clock is appended to the element so first please define empty DIV with **fixed Height and Width**
 
-```HTML
-    npm i --save customizable-analog-clock
+```
+npm i --save customizable-analog-clock
 ``` 
 
 1. TS Usage

@@ -1,7 +1,7 @@
 
 # [Customizable Analog Clock](https://ajinkyabijwe.github.io/Customizable-Analog-Clock-Demo/ "Analog Clock")
 
-Total CSS and JS Analog Clock with Maximum Customization with Neomorphic Designed Watchface. Including Emojis for Clock Indicators.
+Total CSS and JS Analog Clock with Maximum Customization with Neumorphic Designed Watchface. Including Emojis for Clock Indicators.
 
 ![emoji](https://user-images.githubusercontent.com/8812357/87088012-110cdc00-c202-11ea-874b-29e06a74ccb5.png)
 ![numbers](https://user-images.githubusercontent.com/8812357/87088015-110cdc00-c202-11ea-9ea8-35a7ba5577b4.png)

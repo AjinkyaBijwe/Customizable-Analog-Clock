@@ -1,35 +1,34 @@
 {
-  "name": "customizable-analog-clock",
-  "version": "0.1.2",
-  "description": "Total CSS and JS Analog Clock with Maximum Customization. Including Emojis for Clock Indicators",
-  "main": "lib/analog-clock.js",
-  "types": "lib/analog-clock.d.ts",
-  "homepage": "https://github.com/AjinkyaBijwe/analog-clock",
-  "bugs": {
-    "url": "https://github.com/AjinkyaBijwe/analog-clock/issues"
-  },
-  "devDependencies": {
-    "jsmin": "^1.0.1",
-    "typescript": "^3.9.6"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "minify": "jsmin -o lib/analog-clock.min.js lib/analog-clock.js",
-    "build": "tsc",
-    "build-prod": "tsc && npm run minify",
-    "watch": "tsc --watch"
-  },
-  "keywords": [],
-  "author": "Ajinkya Bijwe",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AjinkyaBijwe/analog-clock.git"
-  },
-  "dependencies": {
-    "user": "0.0.0"
-  },
-  "directories": {
-    "lib": "lib"
-  }
+    "name": "customizable-analog-clock",
+    "version": "0.1.4",
+    "description": "Total CSS and JS Analog Clock with Maximum Customization. Including Emojis for Clock Indicators",
+    "main": "lib/analog-clock.js",
+    "types": "lib/analog-clock.d.ts",
+    "homepage": "https://github.com/AjinkyaBijwe/Customizable-Analog-Clock",
+    "bugs": {
+        "url": "https://github.com/AjinkyaBijwe/Customizable-Analog-Clock/issues"
+    },
+    "devDependencies": {
+        "jsmin": "^1.0.1",
+        "typescript": "^3.9.6"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "minify": "jsmin -o lib/analog-clock.min.js lib/analog-clock.js",
+        "build": "tsc",
+        "build-prod": "tsc && npm run minify",
+        "watch": "tsc --watch",
+        "deploy": "npm run build-prod && npm version patch && npm publish"
+    },
+    "keywords": [
+        "Analog Clock",
+        "Customizable",
+        "Neumorphic Design"
+    ],
+    "author": "Ajinkya Bijwe",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/AjinkyaBijwe/Customizable-Analog-Clock.git"
+    }
 }

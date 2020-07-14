@@ -3,14 +3,15 @@
 
 Total CSS and JS Analog Clock with Maximum Customization with Neomorphic Designed Watchface. Including Emojis for Clock Indicators.
 
-> NPM Module Coming Soon
-
 ![emoji](https://user-images.githubusercontent.com/8812357/87088012-110cdc00-c202-11ea-874b-29e06a74ccb5.png)
 ![numbers](https://user-images.githubusercontent.com/8812357/87088015-110cdc00-c202-11ea-9ea8-35a7ba5577b4.png)
 ![date](https://user-images.githubusercontent.com/8812357/87088011-10744580-c202-11ea-88e1-63af0df4dea5.png)
 
 ## Demo
 [Demo](https://ajinkyabijwe.github.io/Customizable-Analog-Clock-Demo/)
+
+##NPM 
+[NPM](https://www.npmjs.com/package/customizable-analog-clock/)
 
 ## Default Configuration Options
 ```javascript
@@ -44,6 +45,10 @@ const config = {
 
 ## Example Usage
 Analog Clock is appended to the element so first please define empty DIV with **fixed Height and Width**
+
+```HTML
+    npm i --save customizable-analog-clock
+``` 
 
 1. TS Usage
 ```HTML

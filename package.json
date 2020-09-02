@@ -1,6 +1,6 @@
 {
     "name": "customizable-analog-clock",
-    "version": "0.1.5",
+    "version": "1.0.0",
     "description": "Total CSS and JS Analog Clock with Maximum Customization. Including Emojis for Clock Indicators",
     "main": "lib/analog-clock.js",
     "types": "lib/analog-clock.d.ts",

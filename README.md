@@ -10,7 +10,7 @@ Total CSS and JS Analog Clock with Maximum Customization with Neumorphic Designe
 ## Demo
 [Demo](https://ajinkyabijwe.github.io/Customizable-Analog-Clock-Demo/)
 
-##NPM 
+## NPM 
 [NPM](https://www.npmjs.com/package/customizable-analog-clock/)
 
 ## Default Configuration Options
